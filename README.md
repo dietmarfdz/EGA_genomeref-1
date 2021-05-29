@@ -27,6 +27,10 @@ Please note that input vcf file has to be gzipped (or bgzipped).
 bash /path/genome_ref_cal.sh input.vcf.gz
 ```
 
+Once run you should check if the number of matches in the inferred genome reference is confident for you (displayed in \*.final). We have established a number of 100 matches in just one genome reference to be confident although you may consider another cutoff.
+
+Intermediate files with information regarding the variants matching the reference genome are deleted (file \*.variants) but you may be interested in checking them just in case you find some inconsistencies (e.g matches in more than one genome ref).
+
 # Demo
 
 Demo folder contains a subset of vcf from chromosome 22 from 1000 Genomes data for testing purposes.
